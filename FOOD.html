@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>❤ wu lin ❤ </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+        
+        body {
+            background-image: url('9.jpg');
+        }
+        
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><i class="fa fa-home"></i></a>
+            <a href="ME.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">ME</a>
+            <a href="PARTNER.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">PARTNER</a>
+            <a href="FOOD.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FOOD</a>
+            <a href="FUTURE.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FUTURE</a>
+        </div>
+    </nav>
+    <div class="w3-opacity">
+        <div class="w3-white w3-xlarge" style="max-width:2000px;margin:auto">
+            <span class="w3-button w3-xxlarge  w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+
+            <div class="w3-center w3-padding-16"><i class="fa fa-pagelines"></i>My Food<i class="fa fa-pagelines"></i></div>
+            <div class="w3-clear"></div>
+        </div>
+    </div>
+
+
+    <div class="w3-content w3-section" style="max-width:500px">
+        <a href="https://goo.gl/maps/ky3EtdvD72abNGjy8"><img class="mySlides" src="10.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/ffwGs5nVGZi5pfbMA"><img class="mySlides" src="11.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/QSm4YErHzGd7YDRA8"><img class="mySlides" src="12.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/Yjh4kx4vUMavUSFS9"> <img class="mySlides" src="13.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/eDBaJqTXViJiKJ6FA"><img class="mySlides" src="14.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/kzmyat5dTepYqCDL7"><img class="mySlides" src="15.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/j43MEEZt4ucm2bgK6"><img class="mySlides" src="16.jpeg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/Tk9BTr6wmboE7uE49"><img class="mySlides" src="17.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/71PcBFJiDXENd4pA9"><img class="mySlides" src="18.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/i1GgKr7rxx8HkuHLA"><img class="mySlides" src="19.jpeg" style="width:100%"></a>
+        <a href="https://goo.gl/maps/878sEDcrZExrKnAm8"><img class="mySlides" src="20.jpg" style="width:100%"></a>
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

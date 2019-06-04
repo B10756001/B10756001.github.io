@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>❤ wu lin ❤ </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1 {
+        font-family: "Raleway", sans-serif
+    }
+    
+    body,
+    html {
+        height: 100%
+    }
+    
+    .bgimg {
+        background-image: url(0.jpg);
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><i class="fa fa-home"></i></a>
+            <a href="ME.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">ME</a>
+            <a href="PARTNER.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">PARTNER</a>
+            <a href="FOOD.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FOOD</a>
+            <a href="FUTURE.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">FUTURE</a>
+        </div>
+    </nav>
+
+
+
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge  w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-clear"></div>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">WELCOME TO MY WED</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">NICE TO MEET YOU</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
